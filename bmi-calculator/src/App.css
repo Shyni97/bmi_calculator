@@ -1,0 +1,257 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page.dark {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page.dark .header {
+  background: #1e1e1e;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #444;
+}
+
+.toggle {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Info Section Styles */
+.info-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.calculation-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.formula-group {
+  margin-bottom: 1.5rem;
+}
+
+.formula-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid #3498db;
+}
+
+.bmi-guide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.bmi-range {
+  flex: 1;
+  min-width: 120px;
+  padding: 1rem;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.bmi-range small {
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+/* Dark mode support */
+.dark .calculation-section {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .formula-box {
+  background: rgba(0, 0, 0, 0.2);
+  border-left-color: #2ecc71;
+}
+.bmi-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+
+/* Chart section */
+.bmi-image {
+  text-align: center;
+  padding: 2rem;
+}
+
+.bmi-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Calculator Card */
+.card {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.page.dark .card {
+  background: #1c1c1c;
+}
+
+.card label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.card input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.unit-toggle {
+  margin-bottom: 1rem;
+  background: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttons .secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.buttons button:first-child {
+  background: #007bff;
+  color: white;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.range {
+  font-style: italic;
+  color: gray;
+}
+
+/* Footer */
+.footer {
+  background: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.page.dark .footer {
+  background: #111;
+  color: #ccc;
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
